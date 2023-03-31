@@ -1,41 +1,74 @@
-import React from 'react';
+
+import { React,useState } from 'react';
 import {
-  ChakraProvider,
   Box,
+  Heading,
   Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
+  Button,
+  Stack,
+  useColorModeValue,
+  ChakraProvider,
+  extendTheme
 } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+
+// import TopicItem from './components/TopicItem';
+import Topic from './components/Topic';
+// const theme = extendTheme({
+//   config: {
+//     initialColorMode: 'light',
+//     useSystemColorMode: false,
+//   },
+//   colors: {
+//     brand: {
+//       100: '#f7fafc',
+//       // ...
+//     },
+//   },
+//   styles: {
+//     global: (props) => ({
+//       body: {
+//         bg: mode('white', 'gray.800')(props),
+//         color: mode('gray.800', 'white')(props),
+//       },
+//     }),
+//   },
+// });
 
 function App() {
+  // const[mode, setMode] = useState('light');
+  // const toggleMode=()=> {
+  //   if(mode==='dark'){
+  //   setMode('light');
+  //   document.body.style.backgroundColor='white';
+  //    }
+  //  else{
+  //     setMode('dark');
+  //     document.body.style.backgroundColor='#202223';
+       
+  //     }
+  // }
+ 
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+    <ChakraProvider >
+      <Router>
+    <Navbar/>
+    <div style={{ marginLeft: '4rem' }}>
+      <Routes>
+      <Route path="/temp" element={<Topic />} />
+      <Route
+            path="*"
+            element={<>404 Error Page, Page not found. Thanks</>}
+          />
+      </Routes>
+      
+    </div>
+    </Router>
+  </ChakraProvider>
   );
 }
 

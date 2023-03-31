@@ -1,0 +1,103 @@
+import { useState } from 'react';
+import {
+  Box,
+  Flex,
+  Text,
+  IconButton,
+  Button,
+  Stack,
+  Collapse,
+  useColorModeValue,
+  useBreakpointValue,
+  useDisclosure,
+} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './ThemeToggleButton';
+
+export default function Navbar() {
+  const { isOpen, onToggle } = useDisclosure();
+  const [isMobileNav, setIsMobileNav] = useState(false);
+
+  return (
+    <Box position="sticky" top="0" zIndex="sticky" bg={useColorModeValue('white', 'gray.800')}>
+      <Flex
+        direction={useBreakpointValue({ base: 'column', md: 'row' })}
+        justify="space-between"
+        align="center"
+        px={{ base: 4, md: 8 }}
+        py={4}
+        borderBottom={1}
+        borderStyle="solid"
+        borderColor={useColorModeValue('gray.200', 'gray.900')}
+      >
+        <Flex align="center">
+          <Text fontSize="xl" fontWeight="bold" letterSpacing="tight">
+            My Website
+          </Text>
+        </Flex>
+
+        <Box display={{ base: 'block', md: 'none' }} onClick={() => setIsMobileNav(!isMobileNav)}>
+          {isMobileNav ? (
+            <IconButton icon={<CloseIcon />} variant="ghost" aria-label="Close menu" />
+          ) : (
+            <IconButton icon={<HamburgerIcon />} variant="ghost" aria-label="Open menu" />
+          )}
+        </Box>
+
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: isMobileNav ? 'block' : 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <Button variant="ghost" href="#">
+            Home
+          </Button>
+          <Button variant="ghost" href="#">
+            About
+          </Button>
+          <Button variant="ghost" href="#">
+            Services
+          </Button>
+          <Button variant="ghost" href="#">
+            Blog
+          </Button>
+          <Button variant="ghost" href="#">
+            Contact
+          </Button>
+        </Stack>
+
+        <Box>
+          <ThemeToggleButton/>
+        </Box>
+      </Flex>
+
+      <Collapse in={isOpen} animateOpacity>
+        <Stack
+          bg={useColorModeValue('white', 'gray.800')}
+          p={4}
+          display={{ md: 'none' }}
+          onClick={() => setIsMobileNav(false)}
+        >
+          <Button variant="ghost" href="#">
+            Home
+          </Button>
+          <Button variant="ghost" href="#">
+            About
+          </Button>
+          <Button variant="ghost" href="#">
+            Services
+          </Button>
+          <Button variant="ghost" href="#">
+            Blog
+          </Button>
+          <Button variant="ghost" href="#">
+            Contact
+          </Button>
+        </Stack>
+      </Collapse>
+    </Box>
+  );
+}
