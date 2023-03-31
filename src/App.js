@@ -12,12 +12,14 @@ import {
 } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 // import TopicItem from './components/TopicItem';
 import Topic from './components/Topic';
+import Home from './pages/Home';
+import QuickStart from './pages/QuickStart';
 // const theme = extendTheme({
 //   config: {
 //     initialColorMode: 'light',
@@ -59,7 +61,8 @@ function App() {
     <Navbar/>
     <div style={{ marginLeft: '4rem' }}>
       <Routes>
-      <Route path="/temp" element={<Topic />} />
+      <Route path="/temp" element={<QuickStart/>} />
+      <Route path="/" element={<Home/>} />
       <Route
             path="*"
             element={<>404 Error Page, Page not found. Thanks</>}

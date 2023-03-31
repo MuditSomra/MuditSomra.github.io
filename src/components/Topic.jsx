@@ -5,8 +5,8 @@ import TopicItem from './TopicItem';
 function Topic() {
   const [data, setData] = useState([
     {
-      heading: 'Quick Start',
-      description: 'Description for first card',
+      heading: 'How to start',
+      description: 'As mentioned in previous blog i used create react app toolchain and used chakra ui for styling. So how i began process...',
       image: 'https://via.placeholder.com/300x200',
     },
     {

@@ -16,7 +16,7 @@ function TopicItem(props) {
             />
             <Stack mt="6" spacing="3">
               <Heading size="md">{item.heading}</Heading>
-              <Text>${item.description}</Text>
+              <Text fontSize="md" fontWeight={"semibold"}>{item.description}</Text>
             </Stack>
           </CardBody>
           <Divider />
