@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.94f255a4.js",
+    "main.js": "/static/js/main.e5ea7960.js",
     "static/js/787.8bf10b35.chunk.js": "/static/js/787.8bf10b35.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.034ef726eb08f413c8e9ff1b0abe7414.svg",
+    "static/media/charkra_home_page.png": "/static/media/charkra_home_page.f3c2f5cb88c93c3b2680.png",
+    "static/media/chakra_framework_page.png": "/static/media/chakra_framework_page.64a47fe6ebd5c657cb1d.png",
+    "static/media/chakra_framework_page_2.png": "/static/media/chakra_framework_page_2.dd0e8119972fc8f9c5ee.png",
     "index.html": "/index.html",
-    "main.94f255a4.js.map": "/static/js/main.94f255a4.js.map",
+    "main.e5ea7960.js.map": "/static/js/main.e5ea7960.js.map",
     "787.8bf10b35.chunk.js.map": "/static/js/787.8bf10b35.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.94f255a4.js"
+    "static/js/main.e5ea7960.js"
   ]
 }
