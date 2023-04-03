@@ -19,7 +19,7 @@ function Home() {
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
           <Heading as="h1" fontSize="5xl" mb={6}>
-            Learn ReactJS with Me
+            Learn ReactJS with Me rounting one
           </Heading>
           <Text fontSize="xl" mb={8} mr={8}>
             This is the web application created using ReactJS, I will teach you
