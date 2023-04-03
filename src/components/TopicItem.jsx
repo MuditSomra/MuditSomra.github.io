@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import { Card, CardHeader, CardBody, CardFooter, Flex, Image, Stack, Heading, Text, Divider, ButtonGroup, Button } from '@chakra-ui/react';
 function TopicItem(props) {
   const data = props.data;
-  
+
 
   return (
     <Flex flexWrap="wrap" justifyContent="space-between">
@@ -22,8 +23,8 @@ function TopicItem(props) {
           <Divider />
           <CardFooter>
             <ButtonGroup spacing="2">
-              <Button variant="solid" colorScheme="blue">
-                Read more..
+              <Button variant="solid" colorScheme="blue" > 
+               <Link to="/temp"> Read more </Link>
               </Button>
             </ButtonGroup>
           </CardFooter>

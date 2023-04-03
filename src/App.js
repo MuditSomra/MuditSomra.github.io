@@ -59,7 +59,7 @@ function App() {
     <ChakraProvider >
       <Router>
     <Navbar/>
-    <div style={{ marginLeft: '4rem' }}>
+ 
       <Routes>
       <Route path="/temp" element={<QuickStart/>} />
       <Route path="/" element={<Home/>} />
@@ -69,7 +69,7 @@ function App() {
           />
       </Routes>
       
-    </div>
+   
     </Router>
   </ChakraProvider>
   );
