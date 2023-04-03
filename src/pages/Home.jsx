@@ -11,8 +11,6 @@ import {
 } from '@chakra-ui/react';
 
 import Topic from '../components/Topic';
-// import heroImage from "./assets/hero-image.jpg";
-
 function Home() {
   return (
     <Box px={8} py={12} maxW="1200px" mx="auto">
@@ -40,41 +38,6 @@ function Home() {
           boxShadow="xl"
         />
       </Flex>
-      {/* <Box mt={16}>
-        <Heading as="h2" fontSize="4xl" mb={8}>
-          Featured Articles
-        </Heading>
-        <Stack spacing={8}>
-          <Box borderWidth="1px" borderRadius="md" overflow="hidden">
-            <Image src="https://via.placeholder.com/800x400.png?text=Article+Image" alt="Article Image" />
-            <Box p={6}>
-              <Heading as="h3" fontSize="xl" mb={4}>
-                The Fundamentals of React Hooks
-              </Heading>
-              <Text fontSize="md" mb={4}>
-                In this article, we'll explore the basics of React Hooks and how they can simplify your code.
-              </Text>
-              <Button colorScheme="blue" size="sm">
-                <Link to="/blog/fundamentals-of-react-hooks">Read More</Link>
-              </Button>
-            </Box>
-          </Box>
-          <Box borderWidth="1px" borderRadius="md" overflow="hidden">
-            <Image src="https://via.placeholder.com/800x400.png?text=Article+Image" alt="Article Image" />
-            <Box p={6}>
-              <Heading as="h3" fontSize="xl" mb={4}>
-                Building a Custom React Component Library
-              </Heading>
-              <Text fontSize="md" mb={4}>
-                Learn how to create a custom React component library that can be reused across multiple projects.
-              </Text>
-              <Button colorScheme="blue" size="sm">
-                <Link to="/blog/custom-react-component-library">Read More</Link>
-              </Button>
-            </Box>
-          </Box>
-        </Stack>
-      </Box> */}
       <Box  borderRadius="md" boxShadow="md" p={6} mb={6} mt={'5rem'}>
         <Flex
           alignItems="center"
