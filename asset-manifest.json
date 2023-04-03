@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.js": "/static/js/main.6bb2780a.js",
+    "main.js": "/static/js/main.32b2140f.js",
     "static/js/787.8bf10b35.chunk.js": "/static/js/787.8bf10b35.chunk.js",
+    "static/media/react_app_appjs.png": "/static/media/react_app_appjs.b7845775ee288bedcf0c.png",
+    "static/media/react_app_indexjs.png": "/static/media/react_app_indexjs.9bae2911256612ce6eaf.png",
+    "static/media/react_app_index_file.png": "/static/media/react_app_index_file.18925eb396e2628db10a.png",
+    "static/media/react_app_home_page.png": "/static/media/react_app_home_page.fb5e77488446167dca13.png",
+    "static/media/react_app_file_structure.png": "/static/media/react_app_file_structure.0983437a98926bd2330a.png",
     "static/media/charkra_home_page.png": "/static/media/charkra_home_page.f3c2f5cb88c93c3b2680.png",
     "static/media/chakra_framework_page.png": "/static/media/chakra_framework_page.64a47fe6ebd5c657cb1d.png",
     "static/media/chakra_framework_page_2.png": "/static/media/chakra_framework_page_2.dd0e8119972fc8f9c5ee.png",
+    "static/media/terminal_react_app.png": "/static/media/terminal_react_app.842f440b30819431530b.png",
+    "static/media/terminal_npm_start.png": "/static/media/terminal_npm_start.6d2979d807f7d607255b.png",
+    "static/media/react_app_public_folder.png": "/static/media/react_app_public_folder.0edc7a1d359acf024e5a.png",
     "index.html": "/index.html",
-    "main.6bb2780a.js.map": "/static/js/main.6bb2780a.js.map",
+    "main.32b2140f.js.map": "/static/js/main.32b2140f.js.map",
     "787.8bf10b35.chunk.js.map": "/static/js/787.8bf10b35.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6bb2780a.js"
+    "static/js/main.32b2140f.js"
   ]
 }
