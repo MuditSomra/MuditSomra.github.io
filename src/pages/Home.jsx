@@ -75,7 +75,7 @@ function Home() {
           </Box>
         </Stack>
       </Box> */}
-      <Box bg="white" borderRadius="md" boxShadow="md" p={6} mb={6} mt={'5rem'}>
+      <Box  borderRadius="md" boxShadow="md" p={6} mb={6} mt={'5rem'}>
         <Flex
           alignItems="center"
           justifyContent="space-between"

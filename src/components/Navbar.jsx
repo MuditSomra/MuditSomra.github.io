@@ -31,12 +31,12 @@ export default function Navbar() {
         borderColor={useColorModeValue('gray.200', 'gray.900')}
       >
         <Flex align="center">
-          <Text fontSize="xl" fontWeight="bold" letterSpacing="tight">
-            My Website
+          <Text fontSize="xl" fontWeight="bold" marginTop="0.8rem" letterSpacing="tight">
+            MS blogs
           </Text>
         </Flex>
 
-        <Box display={{ base: 'block', md: 'none' }} onClick={() => setIsMobileNav(!isMobileNav)}>
+        <Box display={{ base: 'block', md: 'none' }}  onClick={() => setIsMobileNav(!isMobileNav)}>
           {isMobileNav ? (
             <IconButton icon={<CloseIcon />} variant="ghost" aria-label="Close menu" />
           ) : (
