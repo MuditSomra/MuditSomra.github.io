@@ -5,34 +5,35 @@ import TopicItem from './TopicItem';
 function Topic() {
   const [data, setData] = useState([
     {
-      heading: 'How to start',
-      description: 'As mentioned in previous blog i used create react app toolchain and used chakra ui for styling. So how i began process...',
-      image: 'https://via.placeholder.com/300x200',
-      link:'/temp'
+      heading: 'How to create React Application',
+      description:
+        'As mentioned in previous blog i used create react app toolchain and used chakra ui for styling. So how i began process...',
+      image: 'start.jpg',
+      link: '/temp',
     },
     {
       heading: 'File Structure',
       description: 'Description for second card',
-      image: 'https://via.placeholder.com/300x200',
-      link:'/file'
+      image: 'filestructure.png',
+      link: '/file',
+    },
+    {
+      heading: 'How to create a simple component',
+      description: 'Description for third card',
+      image: 'component.jpg',
+      link: '/component',
     },
     {
       heading: 'Props',
       description: 'Description for third card',
-      image: 'https://via.placeholder.com/300x200',
-      link:'/props'
-    },
-    {
-      heading: 'UseState',
-      description: 'Description for third card',
-      image: 'https://via.placeholder.com/300x200',
-      link:'/useState'
+      image: 'asset_folder.png',
+      link: '/props',
     },
     {
       heading: 'Hooks',
       description: 'Description for third card',
-      image: 'https://via.placeholder.com/300x200',
-      link:'/hooks'
+      image: 'asset_folder.png',
+      link: '/hooks',
     },
   ]);
   return (

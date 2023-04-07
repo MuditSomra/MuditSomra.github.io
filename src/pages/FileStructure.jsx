@@ -14,9 +14,11 @@ function FileStructure() {
   const assetsImage2 = require('../assets/asset_image_2.png');
   const assetsImage3 = require('../assets/asset_image_3.png');
 
-  const bgColor = useColorModeValue("gray.100", "gray.700")
+  const bgColor = useColorModeValue("gray.100", "gray.700");
+  const bgColor2 = useColorModeValue("white", "gray.700");
+
   return (
-    <Box maxW="800px" mx="auto" py={8}>
+    <Box bg={bgColor2} maxW="800px" mx="auto" py={8} px={8} borderRadius={"19"} >
       <Heading as="h1" size="xl" mb={4}>
         Understanding the File Structure of a React App
       </Heading>

@@ -11,6 +11,7 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import {Link} from "react-router-dom";
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './ThemeToggleButton';
 
@@ -52,18 +53,18 @@ export default function Navbar() {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <Button variant="ghost" href="#">
+            <Link to='/'>
+          <Button variant="ghost">
             Home
           </Button>
-          <Button variant="ghost" href="#">
+          </Link>
+          <Link to='/about'>
+          <Button variant="ghost">
             About
           </Button>
-          <Button variant="ghost" href="#">
-            Services
-          </Button>
-          <Button variant="ghost" href="#">
-            Blog
-          </Button>
+          </Link>
+         
+          
           <Button variant="ghost" href="#">
             Contact
           </Button>
@@ -81,17 +82,13 @@ export default function Navbar() {
           display={{ md: 'none' }}
           onClick={() => setIsMobileNav(false)}
         >
-          <Button variant="ghost" href="#">
+           <Link to={'/'}>
+          <Button variant="ghost">
             Home
           </Button>
+          </Link>
           <Button variant="ghost" href="#">
             About
-          </Button>
-          <Button variant="ghost" href="#">
-            Services
-          </Button>
-          <Button variant="ghost" href="#">
-            Blog
           </Button>
           <Button variant="ghost" href="#">
             Contact
