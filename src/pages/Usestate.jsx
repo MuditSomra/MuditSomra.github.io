@@ -12,7 +12,7 @@ import {
   Text
 } from '@chakra-ui/react';
 import Counter from '../components/Counter';
-
+import PrevNextButtons from '../components/PrevNextButtons';
 function UseStates() {
 
   // Declare state variables for the counter
@@ -113,6 +113,7 @@ function UseStates() {
           </Box>
         </Box>
       </Stack>
+      <PrevNextButtons  prevUrl="/props" nextUrl="/event"/>
     </Box>
   );
 }

@@ -8,9 +8,21 @@ import {
   Flex,
   Image
 } from '@chakra-ui/react';
-function Counter() {
+function Counter(Props) {
   const bgColor2 = useColorModeValue('gray.100', 'black');
+
+
+
+
+
   const [count, setCount] = useState(0);
+
+
+
+
+
+  
+
   const [text, setText] = useState('');
   const [imageS,setImage]=useState('')
   const increment = require('../assets/increment.png');

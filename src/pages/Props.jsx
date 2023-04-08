@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, Heading, Text, Flex, Image } from '@chakra-ui/react';
-
+import PropInput from '../components/PropInput';
+import PrevNextButtons from '../components/PrevNextButtons';
 function Props() {
   const topicjsx = require('../assets/Topicjsx.png');
   const topicjsx2 = require('../assets/Topicjsx2.png');
   const topicitemjsx = require('../assets/TopicItemjsx.png');
+  const ButtonCompImg = require('../assets/ButtonComp.png');
+  const ButtonCall2 = require('../assets/ButtonCall2.png');
+  const ButtonImage = require('../assets/buttonImage.png');
   return (
     <Box maxW="800px" mx="auto" py={8} px={4}>
       <Heading as="h1" mb={4}>
@@ -22,37 +26,59 @@ function Props() {
         When you define a component in React, you can specify `props` as a
         parameter to the component function. For example:
       </Text>
-      <Box as="pre" mb={4} bg="gray.100" p={2} borderRadius={4}>
-        {`
-function Component(props) {
-  return <div>{props.message}</div>;
-}`}
-      </Box>
+      <Flex justifyContent="center">
+        <Image
+          src={ButtonCompImg}
+          alt=""
+          htmlWidth={'50%'}
+          htmlHeight="auto"
+          style={{
+            borderRadius: '10px',
+            marginTop: '1rem',
+            marginBottom: '1rem',
+          }}
+        />
+      </Flex>
       <Text mb={4}>
-        In this example, `props` is an object that contains any properties
-        passed to the component. The `Component` function uses `props.message`
-        to display a message inside a `div` element.
+        In this example, props is an object that contains any properties
+        passed to the component. The ButtonComp function uses props.text
+        as button text
       </Text>
       <Text mb={4}>
-        You can pass `props` to a component when you call that component from
+        We can pass `props` to a component when you call that component from
         another component. For example:
       </Text>
-      <Box as="pre" mb={4} bg="gray.100" p={2} borderRadius={4}>
-        {`
-function MyApp() {
-  return (
-    <div>
-      <MyComponent message="Hello, world!" />
-    </div>
-  );
-}`}
-      </Box>
+      <Flex justifyContent="center">
+        <Image
+          src={ButtonCall2}
+          alt=""
+          htmlWidth={'50%'}
+          htmlHeight="auto"
+          style={{
+            borderRadius: '10px',
+            marginTop: '1rem',
+            marginBottom: '1rem',
+          }}
+        />
+      </Flex>
       <Text mb={4}>
         In this example, `MyApp` is the parent component, and it passes a
-        `message` prop with the value "Hello, world!" to the `MyComponent` child
-        component. The `MyComponent` component then displays the message inside
-        a `div` element.
+        `text` prop with the value "Prop Content Text" to the ButtonComp child
+        component. The ButtonComp component then displays the button with Prop Content as its name
       </Text>
+      <Flex justifyContent="center">
+        <Image
+          src={ButtonImage}
+          alt=""
+          htmlWidth={'50%'}
+          htmlHeight="auto"
+          style={{
+            borderRadius: '10px',
+            marginTop: '1rem',
+            marginBottom: '1rem',
+          }}
+        />
+      </Flex>
       <Text>
         Overall, `props` are an essential part of building React applications
         because they allow you to create flexible and reusable components that
@@ -122,6 +148,11 @@ function MyApp() {
           }}
         />
       </Flex>
+      <Box>
+      <PropInput/>
+      
+          </Box>
+          <PrevNextButtons  prevUrl="/component" nextUrl="/state"/>
     </Box>
   );
 }

@@ -1,5 +1,6 @@
 import { Box, Heading, Text, Flex, Image, UnorderedList,useColorModeValue, ListItem } from '@chakra-ui/react';
 import React from 'react';
+import PrevNextButtons from '../components/PrevNextButtons';
 function FileStructure() {
   const FileStructureImage = require('../assets/react_app_file_structure.png');
   const indexFile = require('../assets/react_app_index_file.png');
@@ -257,6 +258,7 @@ You can use the public folder to place your custom index.html file, or any other
           }}
         />
       </Flex>
+      <PrevNextButtons  prevUrl="/start" nextUrl="/component"/>
     </Box>
   );
 }

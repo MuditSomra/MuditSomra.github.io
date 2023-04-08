@@ -22,6 +22,9 @@ import ComponentCreation from './pages/ComponentCreation';
 import ScrollToTop from './components/ScrollToTop';
 import Props from './pages/Props';
 import UseStates from './pages/Usestate';
+import Event from './pages/Event';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -30,10 +33,13 @@ function App() {
       <ScrollToTop/>
         <Navbar />
         <Routes>
-          <Route path="/temp" element={<QuickStart />} />
+          <Route path="/start" element={<QuickStart />} />
           <Route path="/file" element={<FileStructure />} />
           <Route path="/props" element={<Props/>} />
           <Route path="/state" element={<UseStates/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/event" element={<Event/>} />
           <Route path="/component" element={<ComponentCreation/>} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<>404 Error Page, Page not found. Thanks</>}/>

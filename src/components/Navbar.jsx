@@ -31,7 +31,7 @@ export default function Navbar() {
         borderStyle="solid"
         borderColor={useColorModeValue('gray.200', 'gray.900')}
       >
-        <Flex align="center">
+        <Flex align="center" >
           <Text fontSize="xl" fontWeight="bold" marginTop="0.8rem" letterSpacing="tight">
             MS blogs
           </Text>
@@ -52,6 +52,7 @@ export default function Navbar() {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          ml={4}
         >
             <Link to='/'>
           <Button variant="ghost">
@@ -64,10 +65,11 @@ export default function Navbar() {
           </Button>
           </Link>
          
-          
+          <Link to='/contact'>
           <Button variant="ghost" href="#">
             Contact
           </Button>
+          </Link>
         </Stack>
 
         <Box>
@@ -87,12 +89,16 @@ export default function Navbar() {
             Home
           </Button>
           </Link>
+          <Link to={'/about'}>
           <Button variant="ghost" href="#">
             About
           </Button>
+          </Link>
+          <Link to={'/contact'}>
           <Button variant="ghost" href="#">
             Contact
           </Button>
+          </Link>
         </Stack>
       </Collapse>
     </Box>

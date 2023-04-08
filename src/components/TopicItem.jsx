@@ -27,6 +27,8 @@ function TopicItem(props) {
               src={require(`../assets/${item.image}`)}
               alt="Green double couch with wooden legs"
               borderRadius="lg"
+              height={"50%"}
+              width={"auto"}
             />
             <Stack mt="6" spacing="3">
               <Heading size="md">{item.heading}</Heading>

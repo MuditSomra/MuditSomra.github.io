@@ -17,18 +17,16 @@ function Home() {
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
           <Heading as="h1" fontSize="5xl" mb={6}>
-            Learn ReactJS with Me rounting one
+            Learn ReactJS with Mudit Somra
           </Heading>
           <Text fontSize="xl" mb={8} mr={8}>
             This is the web application created using ReactJS, I will teach you
             React implementation with help of this web application only. It will
             be kind of mix of blog and implementation. I will refer to this web
             application when i will explain implementation so that you can get
-            to know how it actually work and feel it.
+            to know how it feel and implemented in real life.
           </Text>
-          <Button colorScheme="blue" size="lg" mb={8}>
-            <Link to="/blog">Read the Blog</Link>
-          </Button>
+         
         </Box>
         <Image
           src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1600"

@@ -1,6 +1,6 @@
 import { Box, Heading, Text, Flex, Image, useColorModeValue } from "@chakra-ui/react";
 import React from 'react';
-
+import PrevNextButtons from '../components/PrevNextButtons';
 function ComponentCreation() {
     const bgColor2 = useColorModeValue("white", "gray.700");
     const buttonComp = require('../assets/buttonComponent.png');
@@ -72,6 +72,7 @@ function ComponentCreation() {
         simple div element containing our Button component. Finally, we're
         exporting the App component using the `export default` syntax.
       </Text>
+      <PrevNextButtons  prevUrl="/file" nextUrl="/props"/>
       </Box>
      );}
      export default ComponentCreation;
