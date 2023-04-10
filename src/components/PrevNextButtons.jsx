@@ -5,7 +5,7 @@ import { ArrowBackIcon,ArrowForwardIcon } from "@chakra-ui/icons";
 
 const PrevNextButtons = ({ prevUrl, nextUrl }) => {
   return (
-    <Flex justify="space-between" mb={8}>
+    <Flex justify="space-between" mb={8} mt={5}>
       {prevUrl && (
         <Button   as={RouterLink}
         to={prevUrl}

@@ -37,7 +37,7 @@ function QuickStart() {
         </Heading>
         <Divider  borderWidth="1px" my={4}/>
         <Flex justifyContent="center">
-        <Image src={bannerImage} alt="" htmlWidth={"65%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
+        <Image src={bannerImage} alt="" htmlWidth={"70%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
         </Flex>
         <Text  my="5"  >
           React is a popular front-end JavaScript library for building user
@@ -69,17 +69,17 @@ function QuickStart() {
         <Text  my="5">
           3. Create React App allows users to create a project using a template,
           which determines the files and dependencies included with the
-          generated project. The template we areg going to use id similar to the
+          generated project. The template we are going to use is similar to the
           base create-react-app template. However, it come with Chakra UI
           dependencies pre-installed and include Chakra-specific functionality.
         <Flex justifyContent="center">
-        <Image src={bannerImage2} alt="" htmlWidth={"65%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
+        <Image src={bannerImage2} alt="" htmlWidth={"70%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
         </Flex>
         <Flex justifyContent="center">
-        <Image src={bannerImage3} alt="" htmlWidth={"65%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
+        <Image src={bannerImage3} alt="" htmlWidth={"70%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
         </Flex>
         <Flex justifyContent="center">
-        <Image src={bannerImage6} alt="" htmlWidth={"65%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
+        <Image src={bannerImage6} alt="" htmlWidth={"70%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
         </Flex>
         </Text>
 
@@ -108,13 +108,13 @@ function QuickStart() {
           <Text >npm start</Text>
         </Box>
         <Flex justifyContent="center">
-        <Image src={bannerImage5} alt="" htmlWidth={"65%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
+        <Image src={bannerImage5} alt="" htmlWidth={"70%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
        </Flex>
         <Text  my="5">
           6. This is how your initial application will look like
         </Text>
         <Flex justifyContent="center">
-        <Image src={bannerImage4} alt="" htmlWidth={"65%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
+        <Image src={bannerImage4} alt="" htmlWidth={"70%"} htmlHeight="auto" style={{ borderRadius: "10px", marginTop: "3rem", marginBottom: "3rem" }}/>
        </Flex>
       </Box>
     </Box>

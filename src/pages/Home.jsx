@@ -7,7 +7,8 @@ import {
   Button,
   Stack,
   Center,
-  Link
+  Link,
+  LinkBox
 } from '@chakra-ui/react';
 
 import Topic from '../components/Topic';
@@ -24,7 +25,15 @@ function Home() {
             React implementation with help of this web application only. It will
             be kind of mix of blog and implementation. I will refer to this web
             application when i will explain implementation so that you can get
-            to know how it feel and implemented in real life.
+            to know how it feel and implemented in real life.Let me not forget to mention
+            that all the code of this web application will be on my Github account under 
+            <Link
+              href="https://github.com/MuditSomra/MuditSomra.github.io"
+              target="_blank"
+              color="blue.500"
+              _hover={{ textDecoration: 'underline' }}
+            > MuditSomra.github.io
+            </Link> 
           </Text>
          
         </Box>

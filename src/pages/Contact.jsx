@@ -11,7 +11,7 @@ const Contact = () => {
       <Heading mb={4}>Contact Me</Heading>
       <Box maxW="sm">
         <Text fontSize="lg" mb={2}>
-        <strong>Email:</strong> muditsomr9@gmail.com
+        <strong>Email:</strong> muditsomra9@gmail.com
         </Text>
         <Text fontSize="lg" mb={2}>
         <strong>Address:</strong> Calgary,Alberta
